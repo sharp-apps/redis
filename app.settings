@@ -1,0 +1,9 @@
+debug false
+name Admin UI
+redis.connection localhost:6379
+icon redis.ico
+jsMinifier ServiceStack
+htmlMinifier ServiceStack
+features RunAsAdminFeature, AdminRedisFeature
+RunAsAdminFeature { RedirectTo: '/admin-ui/redis' }
+CefConfig { width:1150, height:1050 }
